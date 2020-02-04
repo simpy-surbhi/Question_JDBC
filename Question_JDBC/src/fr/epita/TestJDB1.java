@@ -2,15 +2,12 @@ package fr.epita;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 
-import org.h2.tools.DeleteDbFiles;
 public class TestJDB1 {
 	
     private final String DB_DRIVER = "org.h2.Driver";
-    private final String DB_CONNECTION = "jdbc:h2:~/test";
+    private final String DB_CONNECTION = "jdbc:h2:mem:testdb";
     private final String DB_USER = "";
     private final String DB_PASSWORD = "";
     
